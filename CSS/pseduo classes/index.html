@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseduo classes</title>
+    <style>
+        /* a tag */
+        a:link{
+            color: pink;
+        }
+        a:visited{
+            color: grey;
+        }
+        a:hover{
+            color: blue;
+        }
+        a:active{
+            color: red;
+        }
+
+        /* list */
+        li:not(:hover){
+            background-color: yellow;
+        }
+
+        li:nth-child(odd){
+            background-color: orange;
+        }
+        li:hover{
+            background-color: green;
+        }
+        
+        /* drop down menus */
+        #greeting p{
+            background-color: blue;
+            padding: 10px;
+            display: none;
+            cursor: pointer;
+        }
+
+        #greeting:hover p{
+            display: block;
+            
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <a href="https:google.com">Google</a>
+        <a href="https:amazon.in">Amazon</a>
+    </div>
+
+    <div>
+        <ul>
+            <li>This is #1</li>
+            <li>This is #2</li>
+            <li>This is #3</li>
+        </ul>
+    </div>
+
+    <div id="greeting">Hover here
+        <p>Hello</p>
+    </div>
+</body>
+</html>

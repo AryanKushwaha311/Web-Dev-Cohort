@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traveller.com</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color:  #1f2937;
+            color: #ffffff;
+            padding: 20px;
+        }
+        nav div ul{
+            display: flex;
+            gap: 20px ;
+            list-style: none;
+            cursor: pointer;
+        }
+
+        nav div button{
+            border-radius: 10px;
+            padding: 5px 10px;
+            cursor: pointer;
+            border: none;
+        }
+
+        nav div button:hover{
+            background-color: blue;
+            color: #ffffff;
+        }
+
+        .hero{
+            background-color: #1f2937;
+            color: green;
+            display: flex;
+            padding: 40px 80px;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .hero div{
+            width: 50%;
+        }
+        .hero div h1{
+            color: white;
+            font-size: 50px;
+            padding-bottom: 20px;
+        }
+        .hero div p{
+            margin-bottom: 20px;
+        }
+        .hero div button{
+            border: none;
+            border-radius: 5px;
+            padding: 5px 10px;
+            cursor: pointer;
+            width: 100px;
+        }
+        .hero div button:hover{
+            background-color: blue;
+            color: white;
+        }
+
+        .hero div img{
+            height: 400px;
+            width: 80%;
+            border-radius: 20px;
+            object-fit: cover;
+            box-shadow: 0 0 10px white;
+            margin: 10px;
+        }
+
+        .hero div img:hover{
+            transform: rotate(-10deg);
+            transition: all 0.5s ease-in-out;
+        }
+
+        .logo-item{
+            text-align: center;
+            font-size: 45px;
+            margin: 20px;
+        }
+
+        .logo{
+            display: flex;
+            border: 2px solid black;
+            gap: 20px;
+            
+        }
+
+        .logo img{
+            height: 100%;
+            width: 100%;
+            
+        }
+
+        .cards{
+            display: flex;
+            justify-content: space-evenly;
+            border: 2px solid black;
+            margin: 40px;
+            padding: 50px 40px;
+            box-shadow: 0 0 10px black;
+            background-color: #1f2937;
+        }
+
+        .cards div{
+            width: 100%;
+            border: 2px solid;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px 30px;
+            box-shadow: 0 0 10px white;
+        }
+
+        
+        .cards img{
+            border: 2px solid black;
+            width: 50%;
+            margin: 20px;
+            border-radius: 15px;
+        }
+
+        .cards img:hover{
+            transform: rotate(10deg);
+            transition: all 0.5s ease-in-out;
+            cursor: pointer;
+        }
+
+        #img-1{
+            height: 180px;
+        }
+
+        .para{
+            margin: 10px 20px;
+            color: green;
+        }
+
+        h3{
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    
+    <section>
+        <nav>
+            <div>
+                My logo
+            </div>
+            <div>
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact us</li>            
+                </ul>
+            </div>
+            <div>
+                <button>Sign in</button>
+                <button>Sign up</button>
+            </div>
+        </nav>
+    </section>
+
+    <section class="hero">
+        <div>
+            <h1 >Hero</h1>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro possimus natus necessitatibus asperiores assumenda harum minus veritatis magnam et architecto?</p>
+
+            <button>Sign up</button>
+        </div>
+        <div>
+            <img class="para" src="../_.jpeg" alt="image not found">
+        </div>
+
+    </section>
+
+    <h1 class="logo-item">Our Clients</h1>
+    <section class="logo">
+        <div> 
+            <img src="../Screenshot 2025-12-24 at 9.22.33 PM.png" alt="image not found">
+        </div>
+        <div>
+            <img src="../Screenshot 2025-12-24 at 9.23.37 PM.png" alt="image not found">
+        </div>
+        <div>
+            <img src="../Screenshot 2025-12-24 at 9.24.20 PM.png" alt="image not found">
+        </div>
+        <div>
+            <img src="../Screenshot 2025-12-24 at 9.24.36 PM.png" alt="image not found">
+        </div>
+        <div>
+            <img src="../Screenshot 2025-12-24 at 9.25.03 PM.png" alt="image not found">
+        </div>
+    </section>
+
+    <section class="cards">
+        <div class="card">
+            <img id="img-1" src="../Screenshot 2025-12-27 at 3.56.26 PM.png" alt="image not found">
+            <h3>Artist</h3>
+            <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, minus!</p>
+        </div>
+
+        <div class="card">
+            <img src="../Screenshot 2025-12-27 at 3.57.18 PM.png" alt="image not found">
+            <h3>Charlie Chaplin</h3>
+            <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt quisquam mollitia et non atque ex blanditiis recusandae iste dolor neque.</p>
+        </div>
+
+        <div class="card">
+            <img src="../Screenshot 2025-12-27 at 3.58.26 PM.png" alt="image not found">
+            <h3>Albert Eienstien</h3>
+            <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto animi sed repudiandae esse maxime at?</p>
+        </div>
+    </section>
+     
+</body>
+</html>
